@@ -59,6 +59,6 @@ class BucketSort {
 	public static void main(String args[]) 
 	{ 
 		//Create object
-		 BucketSort bs1 = new BucketSort() 
+		 BucketSort bs1 = new BucketSort();
 	} 
 } 
