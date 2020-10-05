@@ -3,10 +3,26 @@ import java.util.*;
 import java.util.Collections; 
 
 class BucketSort { 
+	
+	//Constructor
+	public BucketSort(){
+	
+		float arr[] = { (float)0.897, (float)0.565, 
+						(float)0.656, (float)0.1234, 
+						(float)0.665, (float)0.3434 }; 
+
+		int n = arr.length; 
+		bucketSort(arr, n); 		// Call the function
+
+		System.out.println("Sorted array is "); 
+		for (float el : arr) { 
+			System.out.print(el + " "); 
+		}
+	}
 
 	// Function to sort arr[] of size n 
 	// using bucket sort 
-	static void bucketSort(float arr[], int n) 
+	void bucketSort(float arr[], int n) 
 	{ 
 		if (n <= 0) 
 			return; 
@@ -42,16 +58,7 @@ class BucketSort {
 	// Driver code 
 	public static void main(String args[]) 
 	{ 
-		float arr[] = { (float)0.897, (float)0.565, 
-						(float)0.656, (float)0.1234, 
-						(float)0.665, (float)0.3434 }; 
-
-		int n = arr.length; 
-		bucketSort(arr, n); 
-
-		System.out.println("Sorted array is "); 
-		for (float el : arr) { 
-			System.out.print(el + " "); 
-		} 
+		//Create object
+		 BucketSort bs1 = new BucketSort() 
 	} 
 } 
